@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="MemberContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="czi-TH-pfx">
+                        <rect key="frame" x="305" y="16.5" width="5" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="id9-tQ-qY1"/>
+                            <constraint firstAttribute="height" constant="10" id="n49-If-5Tb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的二维码" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y9-nj-vql">
+                        <rect key="frame" x="10" y="13.5" width="180" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="wVg-U3-88y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123个" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3f-Fa-zBO">
+                        <rect key="frame" x="210" y="13.5" width="100" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fenfeng" translatesAutoresizingMaskIntoConstraints="NO" id="F1I-aT-D5x">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="czi-TH-pfx" firstAttribute="centerY" secondItem="3Y9-nj-vql" secondAttribute="centerY" id="4l7-RK-8RG"/>
+                    <constraint firstAttribute="trailing" secondItem="F1I-aT-D5x" secondAttribute="trailing" id="9qN-me-XXi"/>
+                    <constraint firstItem="R3f-Fa-zBO" firstAttribute="centerY" secondItem="3Y9-nj-vql" secondAttribute="centerY" id="GjR-aO-M05"/>
+                    <constraint firstItem="R3f-Fa-zBO" firstAttribute="leading" secondItem="3Y9-nj-vql" secondAttribute="trailing" constant="20" id="N7q-IF-u5R"/>
+                    <constraint firstItem="3Y9-nj-vql" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RZP-L1-2dK"/>
+                    <constraint firstAttribute="trailing" secondItem="R3f-Fa-zBO" secondAttribute="trailing" constant="10" id="UsL-6E-b6L"/>
+                    <constraint firstItem="F1I-aT-D5x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bwL-TM-lqF"/>
+                    <constraint firstAttribute="bottom" secondItem="F1I-aT-D5x" secondAttribute="bottom" id="deS-Dh-gBo"/>
+                    <constraint firstAttribute="trailing" secondItem="czi-TH-pfx" secondAttribute="trailing" constant="10" id="gOz-g1-2BO"/>
+                    <constraint firstItem="3Y9-nj-vql" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="skJ-9s-nz1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="rightArrow" destination="czi-TH-pfx" id="kmf-fO-FUy"/>
+                <outlet property="subContent" destination="R3f-Fa-zBO" id="rvQ-Oi-209"/>
+                <outlet property="titleContent" destination="3Y9-nj-vql" id="E8D-68-laI"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fenfeng" width="1" height="1"/>
+        <image name="icon-arrow" width="5" height="10"/>
+    </resources>
+</document>

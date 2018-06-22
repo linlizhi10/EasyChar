@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="AdjustlistCell">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="312" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【女鞋促销】" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fz3-lw-j5U">
+                        <rect key="frame" x="10" y="10" width="292" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="jRU-ch-EXw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fenfeng" translatesAutoresizingMaskIntoConstraints="NO" id="4hb-ve-tMb">
+                        <rect key="frame" x="0.0" y="85.5" width="312" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="黑色 36码" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXS-1Z-0fe">
+                        <rect key="frame" x="10" y="40" width="292" height="36.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fz3-lw-j5U" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="LAA-KK-XLa"/>
+                    <constraint firstAttribute="bottom" secondItem="4hb-ve-tMb" secondAttribute="bottom" id="RyM-sc-bJO"/>
+                    <constraint firstItem="Fz3-lw-j5U" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TXg-N1-LDN"/>
+                    <constraint firstAttribute="bottom" secondItem="LXS-1Z-0fe" secondAttribute="bottom" constant="10" id="V2k-0W-xrw"/>
+                    <constraint firstItem="LXS-1Z-0fe" firstAttribute="leading" secondItem="Fz3-lw-j5U" secondAttribute="leading" id="c4m-cO-aAp"/>
+                    <constraint firstItem="4hb-ve-tMb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eNO-en-TmX"/>
+                    <constraint firstAttribute="trailing" secondItem="LXS-1Z-0fe" secondAttribute="trailing" constant="10" id="fzb-TD-9aS"/>
+                    <constraint firstAttribute="trailing" secondItem="Fz3-lw-j5U" secondAttribute="trailing" constant="10" id="rhc-Pr-2y3"/>
+                    <constraint firstItem="LXS-1Z-0fe" firstAttribute="top" secondItem="Fz3-lw-j5U" secondAttribute="bottom" constant="10" id="u1z-fZ-iJP"/>
+                    <constraint firstAttribute="trailing" secondItem="4hb-ve-tMb" secondAttribute="trailing" id="xL4-Qg-tST"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityContent" destination="LXS-1Z-0fe" id="eHD-Eb-Jqa"/>
+                <outlet property="activityTitle" destination="Fz3-lw-j5U" id="S6C-uL-ser"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="62.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fenfeng" width="1" height="1"/>
+    </resources>
+</document>

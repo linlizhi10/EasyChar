@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DDMQRCode">
+            <connections>
+                <outlet property="QRImage" destination="Jv1-FP-Rlt" id="tA1-yK-IJ1"/>
+                <outlet property="adress" destination="zhh-DY-2qY" id="mjr-5E-sxw"/>
+                <outlet property="name" destination="nLb-Xk-ouH" id="JQU-Lu-dZk"/>
+                <outlet property="photo" destination="wzh-OB-d9r" id="xbL-oj-3zv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fbg-CA-9Ay">
+                    <rect key="frame" x="10" y="144" width="355" height="463"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="服务星级" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhh-DY-2qY">
+                            <rect key="frame" x="84" y="59.5" width="49.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.43529411764705883" green="0.43529411764705883" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="员工姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLb-Xk-ouH">
+                            <rect key="frame" x="84" y="26" width="65.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GRXX-img-tx" translatesAutoresizingMaskIntoConstraints="NO" id="wzh-OB-d9r">
+                            <rect key="frame" x="17" y="17" width="58" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="58" id="9kD-vP-Wni"/>
+                                <constraint firstAttribute="height" constant="58" id="Sux-6d-ekT"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DDZF-img-QRcode" translatesAutoresizingMaskIntoConstraints="NO" id="Jv1-FP-Rlt">
+                            <rect key="frame" x="10" y="138" width="335" height="261"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="261" id="OaY-e9-gnO"/>
+                                <constraint firstAttribute="width" constant="335" id="kwy-3o-xQ2"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Jv1-FP-Rlt" firstAttribute="centerY" secondItem="Fbg-CA-9Ay" secondAttribute="centerY" constant="37" id="4CA-D1-PAA"/>
+                        <constraint firstItem="zhh-DY-2qY" firstAttribute="leading" secondItem="nLb-Xk-ouH" secondAttribute="leading" id="IhM-vA-NDD"/>
+                        <constraint firstItem="wzh-OB-d9r" firstAttribute="leading" secondItem="Fbg-CA-9Ay" secondAttribute="leading" constant="17" id="LA1-ec-uGc"/>
+                        <constraint firstItem="zhh-DY-2qY" firstAttribute="top" secondItem="nLb-Xk-ouH" secondAttribute="bottom" constant="14" id="QHN-OQ-hfL"/>
+                        <constraint firstItem="Jv1-FP-Rlt" firstAttribute="centerX" secondItem="Fbg-CA-9Ay" secondAttribute="centerX" id="dpD-0W-1BD"/>
+                        <constraint firstItem="nLb-Xk-ouH" firstAttribute="leading" secondItem="wzh-OB-d9r" secondAttribute="trailing" constant="9" id="f13-MC-aVO"/>
+                        <constraint firstItem="wzh-OB-d9r" firstAttribute="top" secondItem="Fbg-CA-9Ay" secondAttribute="top" constant="17" id="fMV-Kv-7WY"/>
+                        <constraint firstItem="nLb-Xk-ouH" firstAttribute="top" secondItem="Fbg-CA-9Ay" secondAttribute="top" constant="26" id="y6o-3r-c0R"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Fbg-CA-9Ay" secondAttribute="bottom" constant="60" id="5AP-8q-5UC"/>
+                <constraint firstAttribute="trailing" secondItem="Fbg-CA-9Ay" secondAttribute="trailing" constant="10" id="U6t-fU-UnH"/>
+                <constraint firstItem="Fbg-CA-9Ay" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="144" id="pBK-Zx-YpR"/>
+                <constraint firstItem="Fbg-CA-9Ay" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="pgS-yg-gTP"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="DDZF-img-QRcode" width="174" height="174"/>
+        <image name="GRXX-img-tx" width="100" height="100"/>
+    </resources>
+</document>

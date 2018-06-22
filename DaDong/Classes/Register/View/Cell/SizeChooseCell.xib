@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="SizeChooseCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fenfeng" translatesAutoresizingMaskIntoConstraints="NO" id="WHZ-bO-uDp">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WLXX-img-yuanquan" translatesAutoresizingMaskIntoConstraints="NO" id="JWv-G6-3WX">
+                        <rect key="frame" x="300" y="16" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="Ll4-w8-syb"/>
+                            <constraint firstAttribute="height" constant="10" id="rd0-C6-4ki"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旗舰店" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5U-Ha-IRK">
+                        <rect key="frame" x="10" y="13.5" width="280" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F5U-Ha-IRK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="5h5-GP-7sx"/>
+                    <constraint firstItem="F5U-Ha-IRK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="MoJ-Dm-8oT"/>
+                    <constraint firstAttribute="bottom" secondItem="WHZ-bO-uDp" secondAttribute="bottom" id="R1C-IM-q56"/>
+                    <constraint firstItem="WHZ-bO-uDp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VQU-CZ-e2V"/>
+                    <constraint firstItem="JWv-G6-3WX" firstAttribute="leading" secondItem="F5U-Ha-IRK" secondAttribute="trailing" constant="10" id="dhX-PC-6el"/>
+                    <constraint firstAttribute="trailing" secondItem="JWv-G6-3WX" secondAttribute="trailing" constant="10" id="hdZ-C2-RUE"/>
+                    <constraint firstItem="JWv-G6-3WX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hfv-xz-DpL"/>
+                    <constraint firstAttribute="trailing" secondItem="WHZ-bO-uDp" secondAttribute="trailing" id="rvp-i5-khR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chooseFlag" destination="JWv-G6-3WX" id="Xdp-re-B5k"/>
+                <outlet property="sizeN" destination="F5U-Ha-IRK" id="vv6-0L-HFh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="WLXX-img-yuanquan" width="7" height="7"/>
+        <image name="fenfeng" width="1" height="1"/>
+    </resources>
+</document>
